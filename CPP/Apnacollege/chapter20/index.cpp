@@ -12,8 +12,6 @@ int uniqueElementSortedArray(vector<int>& vec){
 
       while(s<=e){
 
-        //   cout<<s<<","<<e<<',';
-
            if(e==s){
  
                return vec[s];
@@ -21,7 +19,6 @@ int uniqueElementSortedArray(vector<int>& vec){
            }
 
            int mid=s+(e-s)/2;
-        //    cout<<mid<<',';
 
            if(vec[mid] != vec[mid-1] && vec[mid]!=vec[mid+1]){
               return vec[mid];
